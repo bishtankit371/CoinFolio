@@ -1,4 +1,5 @@
 import Header from "./Header.jsx";
+import AllCoins from "./AllCoins.jsx";
 import Trending from "./Trending.jsx";
 import {useRef, useState, useEffect} from "react";
 
@@ -53,18 +54,20 @@ if(error){
     <Header />
     <div className="d-flex">
 
-    <div className="w-50 mx-4 my-4 border bg-light rounded">
+    <div className="w-50 mx-4 my-4 border bg-light rounded shadow-lg">
 
     <div className="input-group mx-4 my-4">
     <input className="rounded my-2" type="text" placeholder="search crypto" ref={inputRef}/>
     <button className="btn btn-md btn-primary mx-1 rounded my-2" onClick={coinName} > GO </button>
     </div>
-    <h4> Please use the above search bar to search a coin! </h4>
+    <h4 className="mx-4 "> Please use the above search bar to search a coin! </h4>
     </div>
 
     <Trending />
 
     </div>
+
+    <AllCoins />
     </>
     );
 
@@ -75,7 +78,7 @@ if(error){
     <Header />
     <div className="row">
 
-    <div className="w-50 mx-4 my-4 border bg-light rounded">
+    <div className="w-50 mx-4 my-4 border bg-light rounded shadow-lg">
 
     <div className="input-group mx-4 my-4">
     <input className="rounded my-2" type="text" placeholder="search crypto" ref={inputRef}/>
@@ -84,7 +87,7 @@ if(error){
 
     <div className="mx-4 row align-items-end">
     <h4 className="col-2"> #Rank: {coin.market_cap_rank}</h4>
-    <img className="col-2 coin-logo" src={coin.image.small} />
+    <img className="col-2 coin-logo-home" src={coin.image.small} />
   <h4 className="col-2"> {coin.name} </h4>
   <h4 className="col-2"> $ {coin.market_data.current_price.usd} </h4>
   </div>
@@ -94,6 +97,10 @@ if(error){
     <Trending />
 
     </div>
+
+
+<AllCoins />
+
     </>
     );
 

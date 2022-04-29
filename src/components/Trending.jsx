@@ -44,7 +44,7 @@ if(loading){
 
 
   return (
-    <div className="w-25 border my-4 mx-4 bg-light rounded">
+    <div className="w-25 border my-4 mx-4 bg-light rounded shadow-lg">
 
     <h3 className="mx-4 my-2 px-4"> Trending 🔥</h3>
     <hr />

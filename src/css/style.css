@@ -15,5 +15,9 @@ hr{
 }
 
 .coin-logo{
+  width: 3%;
+}
+
+.coin-logo-home{
   width: 8%;
 }
