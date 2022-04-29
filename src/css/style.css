@@ -1,0 +1,19 @@
+nav h3{
+  color: white;
+}
+
+i{
+  color: white;
+}
+
+body{
+  background-color: #EBEEF1;
+}
+
+hr{
+  visibility: hidden;
+}
+
+.coin-logo{
+  width: 8%;
+}
